@@ -1,0 +1,112 @@
+.heading {
+  background-color: #FFF2F2;
+  margin-bottom: 40px;
+}
+
+
+ul{
+  color: #F47C7C;
+  font-size: 45PX;
+}
+
+
+h1 {
+  color: #F47C7C;
+  text-align: center;
+  font-size: 85px;
+  margin-top: 1%;
+}
+
+
+.footwear{
+  width: 33%;
+  display: inline-block;
+
+}
+
+.apparel{
+  width:33%;
+  display: inline-block;
+
+}
+
+.sunglasses{
+  width:33%;
+  display: inline-block;
+
+}
+
+.TOPWEAR{
+  width:40%;
+  display: inline-block;
+
+}
+
+.BOTTOMWEAR{
+  width:40%;
+  display: inline-block;
+
+}
+
+
+
+
+.SANDEL{
+  width:30%;
+  display: inline-block;
+
+}
+
+
+
+.FLIPFLOPS{
+  width:30%;
+  display: inline-block;
+
+}
+
+
+
+.SHOES{
+  width:30%;
+  display: inline-block;
+
+}
+
+
+.TOPWEARimg{
+  width: 70%;
+}
+
+.BOTTOMWEARimg{
+  width: 70%;
+}
+
+
+
+.SHOESimg{
+  width: 70%;
+}
+
+
+
+.FLIPFLOPSimg{
+  width: 70%;
+}
+
+
+.SANDELimg{
+  width: 90%;
+}
+
+
+
+.footwearimg{
+  width: 70%;
+}
+
+
+
+.sunglassesimg{
+  width: 70%;
+}

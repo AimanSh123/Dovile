@@ -1,0 +1,54 @@
+.heading {
+  background-color: #FFF2F2;
+  margin-bottom: 40px;
+}
+
+
+
+h1 {
+  color: #F47C7C;
+  text-align: center;
+  font-size: 85px;
+  margin-top: 1%;
+}
+
+
+.footwear{
+  width: 33%;
+  display: inline-block;
+
+}
+
+.apparel{
+  width:33%;
+  display: inline-block;
+
+}
+
+.sunglasses{
+  width:33%;
+  display: inline-block;
+
+}
+
+
+
+.apparelimg{
+  width: 70%;
+}
+
+
+
+.footwearimg{
+  width: 70%;
+}
+
+
+
+.sunglassesimg{
+  width: 70%;
+}
+
+.BOTTOMWEARimg{
+  width: 60%;
+}
