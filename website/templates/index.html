@@ -6,7 +6,8 @@
   <title>
     DOVILE
   </title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../static/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -40,17 +41,26 @@
 
   <div class="maleimage" style="text-align:center">
   <img class="maleimg" src="https://i.pinimg.com/564x/c5/09/b7/c509b711d0c1bf933a659bad0e23b649.jpg" alt="male">
-  <h2><a href="male.html
+  <h2><a id="male" href="#
     ">MEN</a></h2>
 </div>
 
 <div class="femaleimage" style="text-align:center">
 <img class="femaleimg" src="https://i.pinimg.com/564x/dd/df/1e/dddf1e017f3437f84830d5475d7e7b70.jpg" alt="female">
-<h2><a href="female.html
+<h2><a id="female" href="#
   ">WOMEN</a></h2>
 </div>
 
-
+<script>
+  $("#male").click(async () => {
+      		await fetch("/male");
+      		window.location = "/male";
+  		});
+  $("#female").click(async () => {
+      		await fetch("/female");
+      		window.location = "/female";
+  		});
+</script>
 </body>
 
 </html>
