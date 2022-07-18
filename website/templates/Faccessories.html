@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>ACCESSORIES
     </title>
-      <link rel="stylesheet" href="css/MSTYLES.css">
+      <link rel="stylesheet" href="../static/MSTYLES.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -16,7 +17,7 @@
       <div class="BAGS" style="text-align:center">
         <img class="BAGSimg" src="https://m.media-amazon.com/images/I/81RJTlx++iL.AC_UL480_FMwebp_QL65.jpg" alt="SANDEL">
 
-      <h2><a href="M.html
+      <h2><a id="bags" href="#
         ">BAGS</a></h2>
     </div>
 
@@ -24,17 +25,30 @@
 
           <div class="SOCKS" style="text-align:center">
           <img class="SOCKSimg" src="https://m.media-amazon.com/images/I/91afM6PB1ZL.AC_UL480_FMwebp_QL65.jpg" alt="FLIPFLOPS">
-          <h2><a href="M.html
+          <h2><a id="socks" href="#
             ">SOCKS</a></h2>
         </div>
 
 
     <div class="WALLETS" style="text-align:center">
     <img class="WALLETSimg" src="https://m.media-amazon.com/images/I/41gCBVM60sL.UX679.jpg" alt="SHOES">
-    <h2><a href="WALLETS.html
+    <h2><a id="wallets" href="#
       ">WALLETS</a></h2>
   </div>
-
+  <script>
+    $('#bags').click(async () => {
+            await fetch("/bags");
+            window.location = "/bags";
+        });
+    $('#socks').click(async () => {
+            await fetch("/socks");
+            window.location = "/socks";
+        });
+    $('#wallets').click(async () => {
+            await fetch("/wallets");
+            window.location = "/wallets";
+        });
+  </script>
 
 
 

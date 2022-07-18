@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>men
     </title>
-      <link rel="stylesheet" href="css/MSTYLES.css">
+      <link rel="stylesheet" href="../static/MSTYLES.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -15,23 +16,36 @@
 
       <div class="apparel" style="text-align:center">
       <img class="apparelimg" src="https://media.everlane.com/image/upload/c_fill,w_384,ar_1:1,q_auto,dpr_1.0,g_face:center,f_auto,fl_progressive:steep/i/57183565_c86c" alt="male">
-      <h2><a href="Mapparel.html
+      <h2><a id="apparel" href="#
         ">APPAREL</a></h2>
     </div>
 
 
     <div class="footwear" style="text-align:center">
     <img class="footwearimg" src="https://m.media-amazon.com/images/I/51TxqmHOowL.jpg" alt="male">
-    <h2><a href="Mfootwear.html
+    <h2><a id="footwear"href="#
       ">FOOTWEAR</a></h2>
   </div>
 
 
   <div class="sunglasses" style="text-align:center">
   <img class="sunglassesimg" src="https://m.media-amazon.com/images/I/411L3Qb+QSL._UX569_.jpg" alt="male">
-  <h2><a href="Maccessories.html
+  <h2><a id="accessories" href="#
     ">ACCESSORIES</a></h2>
 </div>
-
+<script>
+  $('#apparel').click(async () => {
+      		await fetch("/Mapparel");
+      		window.location = "/Mapparel";
+  		});
+  $('#footwear').click(async () => {
+      		await fetch("/Mfootwear");
+      		window.location = "/Mfootwear";
+  		});
+  $('#accessories').click(async () => {
+      		await fetch("/Maccessories");
+      		window.location = "/Maccessories";
+  		});
+</script>
   </body>
 </html>
